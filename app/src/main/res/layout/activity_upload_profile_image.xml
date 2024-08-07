@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UploadProfilePicActivity"
+        android:background="@color/light_gray">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/backUploadProfilePic"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/arrow_back_icon" />
+
+            <TextView
+                android:id="@+id/textView_upload_pic_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Upload your profile pic"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_pic_choose_button"
+                android:layout_below="@id/textView_upload_pic_head"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/appointment_btn"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Choose Picture" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/upload_pic_profile_dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/border"
+                android:layout_below="@id/upload_pic_choose_button"
+                android:contentDescription="ImageView to Display Pic" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_pic_btnUpload"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/upload_pic_profile_dp"
+                android:background="@drawable/appointment_btn"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Upload" />
+
+            <ProgressBar
+                android:id="@+id/progressBarUpdateProfile"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:elevation="@dimen/_8sdp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/editName"
+        android:title="Edit Name" />
+
+<!--    <item-->
+<!--        android:id="@+id/changePhoto"-->
+<!--        android:title="Change Profile Photo">-->
+
+<!--        <menu>-->
+
+<!--            <item-->
+<!--                android:id="@+id/camera"-->
+<!--                android:title="Camera"/>-->
+
+<!--            <item-->
+<!--                android:id="@+id/gallary"-->
+<!--                android:title="Gallary"/>-->
+
+<!--        </menu>-->
+
+<!--    </item>-->
+
+<!--    <item-->
+<!--        android:id="@+id/setting"-->
+<!--        android:title="Setting" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/logout"-->
+<!--        android:title="Logout" />-->
+</menu>

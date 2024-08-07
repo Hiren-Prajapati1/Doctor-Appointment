@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/bottomHome"
+    android:icon="@drawable/ic_home"
+    android:title="Home"
+    app:cnb_iconColor="#E91E63"/>
+<item
+    android:id="@+id/bottomBooking"
+    android:icon="@drawable/ic_booking"
+    android:title="Booking"
+    app:cnb_iconColor="#E91E63"/>
+<item
+    android:id="@+id/bottomProfile"
+    android:icon="@drawable/ic_profile"
+    android:title="Profile"
+    app:cnb_iconColor="#E91E63"/>
+</menu>
